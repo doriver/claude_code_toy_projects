@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P2P Chat</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="chat-page">
+  <div class="chat-layout">
+    <!-- 사이드바 -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>P2P Chat</h2>
+        <div class="my-name">접속 중: <strong id="my-username"></strong></div>
+        <button class="btn-logout" id="btn-logout">로그아웃</button>
+      </div>
+      <div class="user-list">
+        <h3>온라인 사용자</h3>
+        <div id="users-container"></div>
+      </div>
+    </aside>
+
+    <!-- 채팅 영역 -->
+    <main class="chat-area">
+      <div id="empty-state" class="empty-state">
+        좌측에서 대화할 사용자를 선택하세요
+      </div>
+
+      <div id="chat-panel" style="display:none; flex:1; flex-direction:column; display:none;">
+        <div class="chat-header">
+          <div class="avatar" id="peer-avatar" style="width:34px;height:34px;border-radius:50%;background:#4f46e5;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:600;"></div>
+          <span class="peer-name" id="peer-name"></span>
+          <span class="connection-status" id="conn-status">연결 안 됨</span>
+        </div>
+        <div class="messages" id="messages"></div>
+        <div class="chat-input-area">
+          <input type="text" id="msg-input" placeholder="메시지를 입력하세요..." disabled>
+          <button class="btn-send" id="btn-send" disabled>전송</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- 채팅 요청 모달 -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal">
+      <h3>채팅 요청</h3>
+      <p id="modal-msg"></p>
+      <div class="modal-buttons">
+        <button class="btn-accept" id="btn-accept">수락</button>
+        <button class="btn-reject" id="btn-reject">거절</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/signaling.js"></script>
+  <script src="/js/chat.js"></script>
+</body>
+</html>

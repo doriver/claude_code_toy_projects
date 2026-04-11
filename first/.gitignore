@@ -1,0 +1,5 @@
+
+*.db
+
+# dependencies
+/node_modules
