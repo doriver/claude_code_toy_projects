@@ -36,4 +36,50 @@
   </div>
 </details>
 
-## 기술스택
+## vibe코딩 성공위해 필요한 것들
+이번 프로젝트 성공후, 분석및 정리한거
+<details>
+  <summary>주요 기능들 리스트</summary>
+  <div>
+    <ul>
+      <li>각 기능별 적당한 디테일
+      </li>
+      <li>자료구조 tree 형태로 디테일 조절, depth 를 몇까지할지 생각해야할듯 
+      </li> 
+      <li>여기선 depth 1까지만 했음 
+      </li>
+    </ul>
+  </div>
+</details>
+<details>
+  <summary>기술 스택</summary>
+  <div>
+    <ul>
+      <li>일반적인 <br> 
+      프론트, 백엔드, db, 인증
+      </li>
+      <li>프로젝트별 특수한 필요 스택들<br>
+      여기선 p2p, websocket
+      </li>
+    </ul>
+  </div>
+</details>
+<details>
+  <summary>(어떻게 구현할지) 상세 계획</summary>
+  <div>
+    <ul>
+      <li>Context
+      </li>
+      <li>프로젝트 구조
+      </li>
+      <li>백엔드 상세 계획
+      </li>
+      <li>프론트엔드 상세 계획
+      </li>
+      <li>구현 순서
+      </li>
+      <li>검증 방법
+      </li>
+    </ul>
+  </div>
+</details>
