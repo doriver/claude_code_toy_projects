@@ -85,3 +85,9 @@
     </ul>
   </div>
 </details>
+
+## 소프트웨어 정보
+* 주요기능 : 회원/인증 , p2p 1:1 채팅
+* 기술스택 : Vanilla JS + Express.js + WebRTC DataChannel + SQLite
+
+ <img width= 70%; alt="image" src="demo/view.png" />
